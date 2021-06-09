@@ -24,16 +24,19 @@ function ProjectItems({
 
         <div className="flex items-center px-6 py-3 bg-gray-900">
           <svg
-            className="w-6 h-6 text-white fill-current"
+            className="w-6 h-6 text-white stroke-current"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+            stroke="#000000"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M17 21C15.8954 21 15 20.1046 15 19V15C15 13.8954 15.8954 13 17 13h29V12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12V13H7C8.10457 13 9 13.8954 9 15V19C9 20.1046 8.10457 21 7 21H3V12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V21h27ZM19 15h27V19h29V15ZM7 15H5V19H7V15Z"
-            />
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 8l4 4-4 4M8 12h7" />
           </svg>
 
           <h2 className="mx-3 text-lg font-semibold text-white">{type}</h2>
@@ -45,74 +48,174 @@ function ProjectItems({
           </h2>
 
           <p className="py-2 text-gray-700 dark:text-gray-400">{description}</p>
-
-          <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
-            <svg
-              className="w-6 h-6 fill-current"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M14 11h20V13h24V11Z" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M7 5V4C7 2.89545 7.89539 2 9 2h25C16.1046 2 17 2.89545 17 4V5H20C21.6569 5 23 6.34314 23 8V18C23 19.6569 21.6569 21 20 21H4C2.34314 21 1 19.6569 1 18V8C1 6.34314 2.34314 5 4 5H7ZM9 4h25V5H9V4ZM4 7C3.44775 7 3 7.44769 3 8V14H21V8C21 7.44769 20.5522 7 20 7H4ZM3 18V16H21V18C21 18.5523 20.5522 19 20 19H4C3.44775 19 3 18.5523 3 18Z"
-              />
-            </svg>
-
-            <h2 className="px-2 text-sm">Meraki UI</h2>
+          <div className="mt-8">
+            <div className="flex items-center">
+              <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+                Lagd med
+              </h4>
+              <div className="flex-1 border-t-2 border-gray-200"></div>
+            </div>
+            <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
+              <li className="flex items-start lg:col-span-1">
+                <div className="flex-shrink-0">
+                  <svg
+                    className="h-6 w-6 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="6"
+                    stroke="currentColor"
+                    fill="#10b981"
+                    viewBox="0 0 1792 1792"
+                  >
+                    <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+                  </svg>
+                </div>
+                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                  All illimited components
+                </p>
+              </li>
+              <li className="flex items-start lg:col-span-1">
+                <div className="flex-shrink-0">
+                  <svg
+                    className="h-6 w-6 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="6"
+                    stroke="currentColor"
+                    fill="#10b981"
+                    viewBox="0 0 1792 1792"
+                  >
+                    <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+                  </svg>
+                </div>
+                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                  Own custom Tailwind styles
+                </p>
+              </li>
+              <li className="flex items-start lg:col-span-1">
+                <div className="flex-shrink-0">
+                  <svg
+                    className="h-6 w-6 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="6"
+                    stroke="currentColor"
+                    fill="#10b981"
+                    viewBox="0 0 1792 1792"
+                  >
+                    <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+                  </svg>
+                </div>
+                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                  Unlimited Templates
+                </p>
+              </li>
+              <li className="flex items-start lg:col-span-1">
+                <div className="flex-shrink-0">
+                  <svg
+                    className="h-6 w-6 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="6"
+                    stroke="currentColor"
+                    fill="#10b981"
+                    viewBox="0 0 1792 1792"
+                  >
+                    <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+                  </svg>
+                </div>
+                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                  Free premium dashboard
+                </p>
+              </li>
+              <li className="flex items-start lg:col-span-1">
+                <div className="flex-shrink-0">
+                  <svg
+                    className="h-6 w-6 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="6"
+                    stroke="currentColor"
+                    fill="#10b981"
+                    viewBox="0 0 1792 1792"
+                  >
+                    <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+                  </svg>
+                </div>
+                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                  Best ranking
+                </p>
+              </li>
+              <li className="flex items-start lg:col-span-1">
+                <div className="flex-shrink-0">
+                  <svg
+                    className="h-6 w-6 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="6"
+                    stroke="currentColor"
+                    fill="#10b981"
+                    viewBox="0 0 1792 1792"
+                  >
+                    <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+                  </svg>
+                </div>
+                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                  Prenium svg
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="container mx-auto">
+            <div className="flex items-center mt-8">
+              <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+                Se mer
+              </h4>
+              <div className="flex-1 border-t-2 border-gray-200"></div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-8 mb-8">
+              <div>
+                {" "}
+                <button
+                  type="button"
+                  class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                >
+                  Besøk nettsiden
+                </button>
+              </div>
+              <div>
+                {" "}
+                <button
+                  type="button"
+                  class="py-2 px-4 flex justify-center items-center  bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="mr-2"
+                    viewBox="0 0 1792 1792"
+                  >
+                    <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"></path>
+                  </svg>
+                  Se koden
+                </button>
+              </div>
+            </div>{" "}
           </div>
 
-          <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
-            <svg
-              className="w-6 h-6 fill-current"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M16.2721 10.2721C16.2721 12.4813 14.4813 14.2721 12.2721 14.2721C10.063 14.2721 8.27214 12.4813 8.27214 10.2721C8.27214 8.063 10.063 6.27214 12.2721 6.27214C14.4813 6.27214 16.2721 8.063 16.2721 10.2721ZM14.2721 10.2721C14.2721 11.3767 13.3767 12.2721 12.2721 12.2721C11.1676 12.2721 10.2721 11.3767 10.2721 10.2721C10.2721 9.16757 11.1676 8.27214 12.2721 8.27214C13.3767 8.27214 14.2721 9.16757 14.2721 10.2721Z"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M5.79417 16.5183C2.19424 13.0909 2.05438 7.3941 5.48178 3.79418C8.90918 0.194258 14.6059 0.0543983 18.2059 3.48179C21.8058 6.90919 21.9457 12.606 18.5183 16.2059L12.3124 22.7241L5.79417 16.5183ZM17.0698 14.8268L12.243 19.8965L7.17324 15.0698C4.3733 12.404 4.26452 7.9732 6.93028 5.17326C9.59603 2.37332 14.0268 2.26454 16.8268 4.93029C19.6267 7.59604 19.7355 12.0269 17.0698 14.8268Z"
-              />
-            </svg>
-
-            <h2 className="px-2 text-sm">California</h2>
-          </div>
-
-          <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
-            <svg
-              className="w-6 h-6 fill-current"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.00977 5.83789C3.00977 5.28561 3.45748 4.83789 4.00977 4.83789H20C20.5523 4.83789 21 5.28561 21 5.83789V17.1621C21 18.2667 20.1046 19.1621 19 19.1621H5C3.89543 19.1621 3 18.2667 3 17.1621V6.16211C3 6.11449 3.00333 6.06765 3.00977 6.0218V5.83789ZM5 8.06165V17.1621h29V8.06199L14.1215 12.9405C12.9499 14.1121 11.0504 14.1121 9.87885 12.9405L5 8.06165ZM6.57232 6.80554h27.428L12.7073 11.5263C12.3168 11.9168 11.6836 11.9168 11.2931 11.5263L6.57232 6.80554Z"
-              />
-            </svg>
-
-            <h2 className="px-2 text-sm">patterson@example.com</h2>
-          </div>
-          <div class="flex items-center mt-4 ">
-            <a href="#" class="block relative">
+          <div className="flex items-center mt-4 ">
+            <a href="#" className="block relative">
               <img
                 alt="profil"
                 src={portraitImage}
-                class="mx-auto object-cover rounded-full h-10 w-10 "
+                className="mx-auto object-cover rounded-full h-10 w-10 "
               />
             </a>
-            <div class="flex flex-col justify-between ml-4 text-sm">
-              <p class="text-gray-800 dark:text-white">Jonas</p>
-              <p class="text-gray-400 dark:text-gray-300">Time and date</p>
+            <div className="flex flex-col justify-between ml-4 text-sm">
+              <p className="text-gray-800 dark:text-white">Jonas</p>
+              <p className="text-gray-400 dark:text-gray-300">Time and date</p>
             </div>
           </div>
         </div>
