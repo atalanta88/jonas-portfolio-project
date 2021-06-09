@@ -1,3 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+#container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main-content {
+  flex: 1;
+}
+
 .App {
   text-align: center;
 }
