@@ -19,13 +19,13 @@ export default function CTASection() {
               <div class="flex mt-8">
                 <a
                   href="#"
-                  class="uppercase py-2 px-4 rounded-lg bg-pink-500 border-2 border-transparent text-white text-md mr-4 hover:bg-pink-400"
+                  class="uppercase py-2 px-4 rounded-lg bg-green-500 border-2 border-transparent text-white text-md mr-4 hover:bg-green-600"
                 >
                   Get started
                 </a>
                 <a
                   href="#"
-                  class="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-pink-500 text-pink-500 dark:text-white hover:bg-pink-500 hover:text-white text-md"
+                  class="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-yellow-300 text-gray-600 dark:text-white hover:bg-yellow-300  text-md"
                 >
                   Read more
                 </a>

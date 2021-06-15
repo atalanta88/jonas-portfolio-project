@@ -50,7 +50,7 @@ function ProjectItems({
           <p className="py-2 text-gray-700 dark:text-gray-400">{description}</p>
           <div className="mt-8">
             <div className="flex items-center">
-              <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+              <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-gray-600">
                 Lagd med
               </h4>
               <div className="flex-1 border-t-2 border-gray-200"></div>
@@ -168,7 +168,7 @@ function ProjectItems({
           </div>
           <div class="container mx-auto">
             <div className="flex items-center mt-8">
-              <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+              <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-gray-600">
                 Se mer
               </h4>
               <div className="flex-1 border-t-2 border-gray-200"></div>
@@ -178,9 +178,9 @@ function ProjectItems({
                 {" "}
                 <button
                   type="button"
-                  class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                  class="py-2 px-4 flex justify-center items-center  bg-green-500 hover:bg-green-600 focus:ring-green-600 focus:ring-offset-gray-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
                 >
-                  Besøk nettsiden
+                  Nettside
                 </button>
               </div>
               <div>
@@ -206,17 +206,7 @@ function ProjectItems({
           </div>
 
           <div className="flex items-center mt-4 ">
-            <a href="#" className="block relative">
-              <img
-                alt="profil"
-                src={portraitImage}
-                className="mx-auto object-cover rounded-full h-10 w-10 "
-              />
-            </a>
-            <div className="flex flex-col justify-between ml-4 text-sm">
-              <p className="text-gray-800 dark:text-white">Jonas</p>
-              <p className="text-gray-400 dark:text-gray-300">Time and date</p>
-            </div>
+            <p className="text-gray-400 dark:text-gray-300">Time and date</p>
           </div>
         </div>
       </div>

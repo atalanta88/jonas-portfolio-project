@@ -1,8 +1,10 @@
+import portraitImage from "../../../../media/jonas-portrait.jpg";
+
 export default function AboutSection() {
   return (
     <>
       {" "}
-      <section className="bg-white dark:bg-gray-800 py-10">
+      <section className="bg-white dark:bg-gray-800 py-20 px-2">
         <div className="container px-0 mx-auto">
           <div className="items-center lg:flex">
             <div className="lg:w-1/2">
@@ -25,16 +27,6 @@ export default function AboutSection() {
               </p>
 
               <div className="flex items-center mt-6 -mx-2">
-                <a className="mx-2" href="#" aria-label="Facebook">
-                  <svg
-                    className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path d="M426.8 64H85.2C73.5 64 64 73.5 64 85.2v341.6c0 11.7 9.5 21.2 21.2 21.2H256V296h-45.9v-56H256v-41.4c0-49.6 34.4-76.6 78.7-76.6 21.2 0 44 1.6 49.3 2.3v51.8h-35.3c-24.1 0-28.7 11.4-28.7 28.2V240h57.4l-7.5 56H320v152h106.8c11.7 0 21.2-9.5 21.2-21.2V85.2c0-11.7-9.5-21.2-21.2-21.2z" />
-                  </svg>
-                </a>
-
                 <a className="mx-2" href="#" aria-label="Linkden">
                   <svg
                     className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
@@ -61,8 +53,8 @@ export default function AboutSection() {
               <div className="flex items-center justify-center lg:justify-end">
                 <div className="max-w-lg">
                   <img
-                    className="object-cover object-center w-full h-64 rounded-md shadow"
-                    src="https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                    className="object-cover object-center w-full rounded-full shadow"
+                    src={portraitImage}
                     alt=""
                   ></img>
                 </div>

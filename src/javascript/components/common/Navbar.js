@@ -30,14 +30,14 @@ export default function Navbar() {
                       <NavLink
                         to="/home"
                         activeClassName="bg-gray-900"
-                        className="px-3 py-2 rounded-md text-sm font-medium  text-white text-gray-300 hover:bg-gray-700 hover:text-white"
+                        className="px-3 py-2 rounded-md text-sm font-medium   text-gray-300 hover:bg-gray-700 hover:text-white"
                       >
                         Home
                       </NavLink>
                       <NavLink
                         to="/about"
                         activeClassName="bg-gray-900"
-                        className="px-3 py-2 rounded-md text-sm font-medium  text-white text-gray-300 hover:bg-gray-700 hover:text-white"
+                        className="px-3 py-2 rounded-md text-sm font-medium   text-gray-300 hover:bg-gray-700 hover:text-white"
                       >
                         About
                       </NavLink>
@@ -113,14 +113,14 @@ export default function Navbar() {
                 <NavLink
                   to="/home"
                   activeClassName="bg-gray-900"
-                  className="px-3 py-2 rounded-md text-sm font-medium  text-white text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="px-3 py-2 rounded-md text-sm font-medium   text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/about"
                   activeClassName="bg-gray-900"
-                  className="px-3 py-2 rounded-md text-sm font-medium  text-white text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="px-3 py-2 rounded-md text-sm font-medium   text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
                   About
                 </NavLink>

@@ -5,6 +5,7 @@ import { API_HOUSINGS } from "../../../constants/api";
 import ProjectItems from "./ProjectItems";
 import ErrorMessage from "../../common/ErrorMessage";
 import LoaderComponent from "../../common/Loading";
+import SortSelect from "./SortSelect";
 
 function ProjectsList() {
   const [housing, setProjectsList] = useState([]);
@@ -44,7 +45,8 @@ function ProjectsList() {
     <>
       <section className="bg-white dark:bg-gray-800 py-10">
         <div class="container mx-auto ">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2 lg:grid-cols-3 ">
+          <SortSelect />
+          <div className="grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
             {housing.map(function (housing) {
               const { id, name, adress, description, price, type, imageone } =
                 housing;
