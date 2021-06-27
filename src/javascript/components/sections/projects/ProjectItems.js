@@ -1,5 +1,4 @@
 import React from "react";
-import portraitImage from "../../../../media/jonas-portrait.jpg";
 
 const openInNewTab = (url) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -12,15 +11,15 @@ function ProjectItems({
   description,
   project_type,
   project_cover,
-  technologies,
   website_url,
   github_url,
+  technology_list,
 }) {
   return (
     <>
       <div
         key={id}
-        className="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800"
+        className="max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800"
       >
         <img
           className="object-cover object-center w-full h-56"
@@ -28,9 +27,9 @@ function ProjectItems({
           alt="avatar"
         ></img>
 
-        <div className="flex items-center px-6 py-3 bg-gray-900">
+        <div className="flex items-center px-6 py-3 bg-white-400">
           <svg
-            className="w-6 h-6 text-white stroke-current"
+            className="w-6 h-6 text-gray-700 stroke-current"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -45,7 +44,7 @@ function ProjectItems({
             <path d="M12 8l4 4-4 4M8 12h7" />
           </svg>
 
-          <h2 className="mx-3 text-lg font-semibold text-white">
+          <h2 className="mx-3 text-lg font-semibold text-gray-700">
             {project_type}
           </h2>
         </div>
@@ -64,28 +63,34 @@ function ProjectItems({
               <div className="flex-1 border-t-2 border-gray-200"></div>
             </div>
             <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
-              <li className="flex items-start lg:col-span-1">
-                <div className="flex-shrink-0">
-                  <svg
-                    className="h-6 w-6 mr-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="6"
-                    height="6"
-                    stroke="currentColor"
-                    fill="#10b981"
-                    viewBox="0 0 1792 1792"
-                  >
-                    <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
-                  </svg>
-                </div>
-                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                  {technologies}
-                </p>
-              </li>
+              {technology_list.map((item) => (
+                <>
+                  <li class="mt-6 lg:mt-0 py-0.5">
+                    <div class="flex">
+                      <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-300 text-white dark:text-white dark:bg-transparent">
+                        <svg
+                          class="h-4 w-4"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                        {item.technology_item}
+                      </span>
+                    </div>
+                  </li>
+                </>
+              ))}
             </ul>
           </div>
           <div className="container mx-auto">
-            <div className="flex items-center mt-8">
+            <div className="flex items-center mt-8 ">
               <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-gray-600">
                 Se mer
               </h4>

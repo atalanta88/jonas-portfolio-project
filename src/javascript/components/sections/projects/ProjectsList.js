@@ -5,7 +5,7 @@ import { API_PROJECTS } from "../../../constants/api";
 import ProjectItems from "./ProjectItems";
 import ErrorMessage from "../../common/ErrorMessage";
 import LoaderComponent from "../../common/Loading";
-import SortSelect from "./SortSelect";
+//import SortSelect from "./SortSelect";
 
 function ProjectsList() {
   const [housing, setProjectsList] = useState([]);
@@ -43,10 +43,9 @@ function ProjectsList() {
 
   return (
     <>
-      <section className="bg-white dark:bg-gray-800 py-10">
+      <section className="bg-white dark:bg-gray-800 py-20">
         <div className="container mx-auto ">
-          <SortSelect />
-          <div className="grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 ">
             {housing.map(function (housing) {
               const {
                 id,
@@ -54,7 +53,7 @@ function ProjectsList() {
                 project_type,
                 description,
                 project_cover,
-                technologies,
+                technology_list,
                 github_url,
                 website_url,
               } = housing;
@@ -67,7 +66,7 @@ function ProjectsList() {
                   project_type={project_type}
                   description={description}
                   project_cover={project_cover}
-                  technologies={technologies}
+                  technology_list={technology_list}
                   github_url={github_url}
                   website_url={website_url}
                 />

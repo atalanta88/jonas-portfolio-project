@@ -4,65 +4,93 @@ export default function AboutSection() {
   return (
     <>
       {" "}
-      <section className="bg-white dark:bg-gray-800 py-20 px-2">
-        <div className="container px-0 mx-auto">
-          <div className="items-center lg:flex">
-            <div className="lg:w-1/2">
-              <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
-                Who I am
-              </h1>
-
-              <p className="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
-                Hi I am jane , software engineer{" "}
-                <a
-                  className="font-bold text-indigo-600 dark:text-indigo-400"
-                  href="#"
+      <section className="text-gray-600 body-font">
+        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+              Om meg
+              <br className="hidden lg:inline-block"></br>
+            </h1>
+            <p className="mb-8 leading-relaxed">
+              Jeg heter Jonas, er 32 år og bor i Sandefjord. Jeg har nylig
+              avsluttet utdanning I Front-end utvikling ved Noroff. Etter en
+              arbeidsulykke i mitt tidligere yrke som taktekker, ble jeg tvunget
+              til å tenke på et nytt yrke. Jeg kom fort frem til at jeg ville
+              jobbe Innen IT. Jeg har alltid hatt interesse for teknologi og
+              blitt tiltrukket av det å løse problemer, så Front-end ble en
+              attraktiv og naturlig yrkesretning for meg å søke mot.
+            </p>
+            <p className="mb-8 leading-relaxed">
+              Tiden på Noroff har vært veldig lærerik, men jeg merker jeg ivrer
+              etter å lære mer og utvikle meg innenfor faget i arbeid. Andre
+              omtaler meg gjerne som arbeidsom, holdningssterk og med god
+              avtalelojalitet – påstander jeg kjenner meg igjen i. Jeg er også
+              nysgjerrig av natur, så jeg ser frem med spenning på å ta stegene
+              ut i arbeidslivet på ny til fordel for skolebenken.
+            </p>
+            <div className="pt-8 flex border-t border-gray-200 w-20 text-gray-500 justify-between">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+                  viewBox="0 0 1792 1792"
                 >
-                  @BakaTeam
-                </a>{" "}
-                , Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Illum in sed non alias, fugiat, commodi nemo ut fugit corrupti
-                dolorem sequi ex veniam consequuntur id, maiores beatae ipsa
-                omnis aliquam?
-              </p>
-
-              <div className="flex items-center mt-6 -mx-2">
-                <a className="mx-2" href="#" aria-label="Linkden">
-                  <svg
-                    className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z" />
-                  </svg>
-                </a>
-
-                <a className="mx-2" href="#" aria-label="Github">
-                  <svg
-                    className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" />
-                  </svg>
-                </a>
-              </div>
+                  <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"></path>
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+                  viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"></path>
+                </svg>
+              </a>
             </div>
-
-            <div className="mt-8 lg:mt-0 lg:w-1/2">
-              <div className="flex items-center justify-center lg:justify-end">
-                <div className="max-w-lg">
-                  <img
-                    className="object-cover object-center w-full rounded-full shadow"
-                    src={portraitImage}
-                    alt=""
-                  ></img>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img
+              className="object-cover object-center rounded-full"
+              alt="hero"
+              src={portraitImage}
+            ></img>
           </div>
         </div>
       </section>
     </>
   );
 }
+
+/*            <div className="pt-8 flex border-t border-gray-200 w-40 mx-auto text-gray-500 items-center justify-between">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"></path>
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+                  viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"></path>
+                </svg>
+              </a>
+            </div>*/

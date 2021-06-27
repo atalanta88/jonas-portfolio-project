@@ -1,162 +1,122 @@
 import React from "react";
 import portraitImage from "../../../media/jonas-portrait.jpg";
 import { NavLink } from "react-router-dom";
-import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+/*
+ <MenuIcon className="block h-6 w-6" aria-hidden="true" />*/
 
 export default function Navbar() {
   return (
-    <div>
-      <Disclosure as="nav" className="bg-gray-800">
-        {({ open }) => (
-          <>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex items-center justify-between h-16">
-                <div className="flex items-center">
-                  <div className="flex-shrink-0">
-                    <img
-                      className="h-8 w-8"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    />
-                  </div>
-                  <div className="hidden md:block">
-                    <div className="ml-10 flex items-baseline space-x-4">
-                      <NavLink
-                        to="/home"
-                        activeClassName="bg-gray-900"
-                        className="px-3 py-2 rounded-md text-sm font-medium   text-gray-300 hover:bg-gray-700 hover:text-white"
-                      >
-                        Home
-                      </NavLink>
-                      <NavLink
-                        to="/about"
-                        activeClassName="bg-gray-900"
-                        className="px-3 py-2 rounded-md text-sm font-medium   text-gray-300 hover:bg-gray-700 hover:text-white"
-                      >
-                        About
-                      </NavLink>
-                    </div>
-                  </div>
-                </div>
-                <div className="hidden md:block">
-                  <div className="ml-4 flex items-center md:ml-6">
-                    {/* Profile dropdown */}
-                    <Menu as="div" className="ml-3 relative">
-                      {({ open }) => (
-                        <>
-                          <div>
-                            <Menu.Button className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                              <span className="sr-only">Open user menu</span>
-                              <img
-                                className="h-8 w-8 rounded-full"
-                                src={portraitImage}
-                                alt=""
-                              />
-                            </Menu.Button>
-                          </div>
-                          <Transition
-                            show={open}
-                            as={Fragment}
-                            enter="transition ease-out duration-100"
-                            enterFrom="transform opacity-0 scale-95"
-                            enterTo="transform opacity-100 scale-100"
-                            leave="transition ease-in duration-75"
-                            leaveFrom="transform opacity-100 scale-100"
-                            leaveTo="transform opacity-0 scale-95"
-                          >
-                            <Menu.Items
-                              static
-                              className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-                            >
-                              <Menu.Item>
-                                {({ active }) => (
-                                  <NavLink
-                                    to="/Login"
-                                    className={classNames(
-                                      active ? "bg-gray-100" : "",
-                                      "block px-4 py-2 text-sm text-gray-700"
-                                    )}
-                                  >
-                                    Login
-                                  </NavLink>
-                                )}
-                              </Menu.Item>
-                            </Menu.Items>
-                          </Transition>
-                        </>
-                      )}
-                    </Menu>
+    <>
+      <div>
+        <nav class="bg-white dark:bg-gray-800  shadow ">
+          <div class="max-w-7xl mx-auto px-8">
+            <div class="flex items-center justify-between h-16">
+              <div class=" flex items-center">
+                <a class="flex-shrink-0" href="/">
+                  <img
+                    class="h-8 w-8 rounded-full"
+                    src={portraitImage}
+                    alt="Workflow"
+                  />
+                </a>
+                <div class="hidden md:block">
+                  <div class="ml-10 flex items-baseline space-x-4">
+                    <a
+                      class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      href="/#"
+                    >
+                      Home
+                    </a>
+                    <a
+                      class="text-gray-300 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      href="/#"
+                    >
+                      Gallery
+                    </a>
+                    <a
+                      class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      href="/#"
+                    >
+                      About
+                    </a>
+                    <a
+                      class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      href="/#"
+                    >
+                      Contact
+                    </a>
                   </div>
                 </div>
-                <div className="-mr-2 flex md:hidden">
-                  {/* Mobile menu button */}
-                  <Disclosure.Button className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                    <span className="sr-only">Open main menu</span>
-                    {open ? (
-                      <XIcon className="block h-6 w-6" aria-hidden="true" />
-                    ) : (
-                      <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-                    )}
-                  </Disclosure.Button>
+              </div>
+              <div class="block">
+                <div class="ml-4 flex items-center md:ml-6">
+                  <a
+                    href="https://github.com/Charlie85270/tail-kit"
+                    class="p-1 rounded-full text-gray-400 focus:outline-none hover:text-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  >
+                    <span class="sr-only">View github</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      class="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+                      viewBox="0 0 1792 1792"
+                    >
+                      <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"></path>
+                    </svg>
+                  </a>
                 </div>
+              </div>
+              <div class="-mr-2 flex md:hidden">
+                <button class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
+                  <svg
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="h-8 w-8"
+                    viewBox="0 0 1792 1792"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"></path>
+                  </svg>
+                </button>
               </div>
             </div>
-
-            <Disclosure.Panel className="md:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <NavLink
-                  to="/home"
-                  activeClassName="bg-gray-900"
-                  className="px-3 py-2 rounded-md text-sm font-medium   text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  Home
-                </NavLink>
-                <NavLink
-                  to="/about"
-                  activeClassName="bg-gray-900"
-                  className="px-3 py-2 rounded-md text-sm font-medium   text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  About
-                </NavLink>
-              </div>
-              <div className="pt-4 pb-3 border-t border-gray-700">
-                <div className="flex items-center px-5">
-                  <div className="flex-shrink-0">
-                    <img
-                      className="h-10 w-10 rounded-full"
-                      src={portraitImage}
-                      alt="Portrait image"
-                    />
-                  </div>
-                  <div className="ml-3">
-                    <div className="text-base font-medium leading-none text-white">
-                      Jonas Olden
-                    </div>
-                    <div className="text-sm font-medium leading-none text-gray-400">
-                      jonasold@hotmail.com
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-3 px-2 space-y-1">
-                  {" "}
-                  <NavLink
-                    to="/Login"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
-                  >
-                    Login
-                  </NavLink>
-                </div>
-              </div>
-            </Disclosure.Panel>
-          </>
-        )}
-      </Disclosure>
-    </div>
+          </div>
+          <div class="md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a
+                class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                href="/#"
+              >
+                Home
+              </a>
+              <a
+                class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
+                href="/#"
+              >
+                Gallery
+              </a>
+              <a
+                class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                href="/#"
+              >
+                Content
+              </a>
+              <a
+                class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                href="/#"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </>
   );
 }
