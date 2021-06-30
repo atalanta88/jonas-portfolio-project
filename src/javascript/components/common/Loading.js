@@ -1,15 +1,10 @@
 import React from "react";
+import Loader from "react-loader-spinner";
 
 export default function LoaderComponent() {
   return (
     <>
-      <button type="button" className="bg-rose-600 ..." disabled>
-        <svg
-          className="animate-spin h-5 w-5 mr-3 ..."
-          viewBox="0 0 24 24"
-        ></svg>
-        Processing
-      </button>
+      <Loader type="Puff" color="#00BFFF" height={100} width={100} />{" "}
     </>
   );
 }

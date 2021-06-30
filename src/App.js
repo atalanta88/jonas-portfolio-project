@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 
 import HomePage from "./javascript/components/pages/Home";
-import AboutPage from "./javascript/components/pages/About";
 import Navbar from "./javascript/components/common/Navbar";
 import Footer from "./javascript/components/common/Footer";
 
@@ -30,9 +29,6 @@ function App() {
             <Switch>
               <Route path="/home">
                 <HomePage />
-              </Route>
-              <Route path="/About">
-                <AboutPage />
               </Route>
             </Switch>
           </div>

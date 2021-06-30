@@ -9,17 +9,18 @@ function ProjectItems({
   id,
   project_name,
   description,
-  project_type,
+  project_grade,
   project_cover,
   website_url,
   github_url,
   technology_list,
+  project_created_date,
 }) {
   return (
     <>
       <div
         key={id}
-        className="max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800"
+        className="max-w-sm mx-auto overflow-hidden bg-white rounded-lg  dark:bg-gray-800"
       >
         <img
           className="object-cover object-center w-full h-56"
@@ -27,9 +28,9 @@ function ProjectItems({
           alt="avatar"
         ></img>
 
-        <div className="flex items-center px-6 py-3 bg-white-400">
+        <div className="flex items-center px-6 py-3">
           <svg
-            className="w-6 h-6 text-gray-700 stroke-current"
+            className="w-6 h-6 text-green-500 stroke-current"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -44,8 +45,8 @@ function ProjectItems({
             <path d="M12 8l4 4-4 4M8 12h7" />
           </svg>
 
-          <h2 className="mx-3 text-lg font-semibold text-gray-700">
-            {project_type}
+          <h2 className="mx-3 text-lg font-semibold text-gray-600">
+            Grade: {project_grade}
           </h2>
         </div>
 
@@ -65,11 +66,11 @@ function ProjectItems({
             <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
               {technology_list.map((item) => (
                 <>
-                  <li class="mt-6 lg:mt-0 py-0.5">
-                    <div class="flex">
-                      <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-300 text-white dark:text-white dark:bg-transparent">
+                  <li className="mt-1 md:mt-3">
+                    <div className="flex">
+                      <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-300 text-white dark:text-white dark:bg-transparent">
                         <svg
-                          class="h-4 w-4"
+                          className="h-4 w-4"
                           viewBox="0 0 20 20"
                           fill="currentColor"
                         >
@@ -80,7 +81,7 @@ function ProjectItems({
                           ></path>
                         </svg>
                       </span>
-                      <span class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                      <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
                         {item.technology_item}
                       </span>
                     </div>
@@ -131,7 +132,9 @@ function ProjectItems({
           </div>
 
           <div className="flex items-center mt-4 ">
-            <p className="text-gray-400 dark:text-gray-300">Time and date</p>
+            <p className="text-gray-400 dark:text-gray-300">
+              År: {project_created_date}
+            </p>
           </div>
         </div>
       </div>

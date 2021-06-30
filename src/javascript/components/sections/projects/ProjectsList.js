@@ -5,7 +5,6 @@ import { API_PROJECTS } from "../../../constants/api";
 import ProjectItems from "./ProjectItems";
 import ErrorMessage from "../../common/ErrorMessage";
 import LoaderComponent from "../../common/Loading";
-//import SortSelect from "./SortSelect";
 
 function ProjectsList() {
   const [housing, setProjectsList] = useState([]);
@@ -43,19 +42,20 @@ function ProjectsList() {
 
   return (
     <>
-      <section className="bg-white dark:bg-gray-800 py-20">
+      <section id="section-two" className=" dark:bg-gray-800 py-20">
         <div className="container mx-auto ">
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 ">
             {housing.map(function (housing) {
               const {
                 id,
                 project_name,
-                project_type,
+                project_grade,
                 description,
                 project_cover,
                 technology_list,
                 github_url,
                 website_url,
+                project_created_date,
               } = housing;
 
               return (
@@ -63,12 +63,13 @@ function ProjectsList() {
                   key={id}
                   id={id}
                   project_name={project_name}
-                  project_type={project_type}
+                  project_grade={project_grade}
                   description={description}
                   project_cover={project_cover}
                   technology_list={technology_list}
                   github_url={github_url}
                   website_url={website_url}
+                  project_created_date={project_created_date}
                 />
               );
             })}
