@@ -4,7 +4,7 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: "Home", href: "Home", current: false },
+  { name: "Home", href: "#section-one", current: false },
   { name: "Projects", href: "#section-two", current: false },
   { name: "About", href: "#section-three", current: false },
   { name: "Contact", href: "#section-four", current: false },
@@ -34,7 +34,7 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <a className="flex-shrink-0" href="/Home">
+                  <a className="flex-shrink-0" href="#section-one">
                     <img
                       className="h-8 w-8 rounded-full"
                       src={portraitImage}
