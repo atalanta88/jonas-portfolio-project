@@ -20,14 +20,14 @@ function App() {
     <>
       <Router>
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/" />
         </Route>
         <Navbar />
         <ScrollToTop />
         <div id="container">
           <div id="main-content">
             <Switch>
-              <Route path="/home">
+              <Route path="/">
                 <HomePage />
               </Route>
             </Switch>

@@ -6,6 +6,8 @@ export default function LoaderComponent() {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    paddingTop: "20vh",
+    paddingBottom: "20vh",
   };
 
   return (
