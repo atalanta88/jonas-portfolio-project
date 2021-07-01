@@ -42,7 +42,7 @@ function ProjectsList() {
 
   return (
     <>
-      <section id="section-two" className=" dark:bg-gray-800 py-20">
+      <section id="projects-section" className=" dark:bg-gray-800 py-20">
         <div className="container mx-auto ">
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 ">
             {housing.map(function (housing) {

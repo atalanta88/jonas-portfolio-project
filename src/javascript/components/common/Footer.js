@@ -1,5 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
+
+const gitHubUrl = "www.github.com/atalanta88";
+const linkedIn = "www.linkedin.com/in/jonas-olden-0500b0191";
 
 export default function Footer() {
   return (
@@ -10,7 +17,7 @@ export default function Footer() {
             <li className="my-2">
               <a
                 className="text-gray-300 hover:text-white transition-colors duration-200"
-                href="#section-one"
+                href="#cta-section"
               >
                 Home
               </a>
@@ -18,7 +25,7 @@ export default function Footer() {
             <li className="my-2">
               <a
                 className="text-gray-300 hover:text-white transition-colors duration-200"
-                href="#section-two"
+                href="#projects-section"
               >
                 Projects
               </a>
@@ -26,7 +33,7 @@ export default function Footer() {
             <li className="my-2">
               <a
                 className="text-gray-300 hover:text-white transition-colors duration-200"
-                href="#section-three"
+                href="#about-section"
               >
                 About
               </a>
@@ -34,7 +41,7 @@ export default function Footer() {
             <li className="my-2">
               <a
                 className="text-gray-300 hover:text-white transition-colors duration-200"
-                href="#section-four"
+                href="#contact-section"
               >
                 Contact
               </a>
@@ -42,7 +49,7 @@ export default function Footer() {
           </ul>
           <div className="pt-8 flex max-w-xs mx-auto items-center justify-between">
             <a
-              href="#"
+              onClick={() => openInNewTab(`//${gitHubUrl}`)}
               className=" text-white hover:text-white transition-colors duration-200"
             >
               <svg
@@ -57,7 +64,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              onClick={() => openInNewTab(`//${linkedIn}`)}
               className="text-white hover:text-white transition-colors duration-200"
             >
               <svg

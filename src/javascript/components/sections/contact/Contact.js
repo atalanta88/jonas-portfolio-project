@@ -2,7 +2,10 @@ export default function ContactSection() {
   return (
     <>
       {" "}
-      <section id="section-four" className="text-gray-600 body-font relative">
+      <section
+        id="contact-section"
+        className="text-gray-600 body-font relative"
+      >
         <div className="absolute inset-0 bg-gray-300">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19473.67399598583!2d10.214749373502187!3d59.13377487630202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646c090553a802b%3A0xc35b51a25c3ce1a2!2sSandefjord!5e0!3m2!1sno!2sno!4v1624869469571!5m2!1sno!2sno"

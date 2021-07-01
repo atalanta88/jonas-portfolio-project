@@ -3,7 +3,7 @@ export default function CTASection() {
     <>
       {" "}
       <section
-        id="section-one"
+        id="cta-section"
         className="bg-gray-100 dark:bg-gray-800 px-1 lg:pt-20 lg:pb-20 "
       >
         <div className="bg-gray-100 dark:bg-gray-800 flex relative z-20 items-center overflow-hidden">

@@ -4,10 +4,10 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: "Home", href: "#section-one", current: false },
-  { name: "Projects", href: "#section-two", current: false },
-  { name: "About", href: "#section-three", current: false },
-  { name: "Contact", href: "#section-four", current: false },
+  { name: "Home", href: "#cta-section", current: false },
+  { name: "Projects", href: "#projects-section", current: false },
+  { name: "About", href: "#about-section", current: false },
+  { name: "Contact", href: "#contact-section", current: false },
 ];
 
 function classNames(...classes) {
@@ -16,7 +16,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="sticky top-0 z-50 bg-gray-800">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -34,7 +34,7 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <a className="flex-shrink-0" href="#section-one">
+                  <a className="flex-shrink-0" href="#cta-section">
                     <img
                       className="h-8 w-8 rounded-full"
                       src={portraitImage}
