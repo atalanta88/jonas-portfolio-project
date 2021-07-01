@@ -14,10 +14,10 @@ export default function CTASection() {
                 Se mine
                 <span className="text-5xl sm:text-7xl">Prosjekter</span>
               </h1>
-              <p className="text-sm sm:text-base text-gray-700 dark:text-white py-5">
-                Dimension of reality that makes change possible and
-                understandable. An indefinite and homogeneous environment in
-                which natural events and human existence take place.
+              <p className="text-xl text-gray-700 dark:text-white py-5">
+                Hei! Mitt navn er Jonas, og denne porteføljen er en
+                representasjon av det jeg har lært og gjort, som student på
+                Noroff - Front-end utdanning.
               </p>
             </div>
             <div className="hidden sm:block sm:w-1/3 lg:w-3/5 relative">

@@ -50,7 +50,7 @@ export default function Footer() {
           <div className="pt-8 flex max-w-xs mx-auto items-center justify-between">
             <a
               onClick={() => openInNewTab(`//${gitHubUrl}`)}
-              className=" text-white hover:text-white transition-colors duration-200"
+              className=" cursor-pointer text-white hover:text-white transition-colors duration-200"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ export default function Footer() {
             </a>
             <a
               onClick={() => openInNewTab(`//${linkedIn}`)}
-              className="text-white hover:text-white transition-colors duration-200"
+              className="cursor-pointer text-white hover:text-white transition-colors duration-200"
             >
               <svg
                 width="20"
