@@ -4,10 +4,10 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: "Home", href: "#cta-section", current: false },
-  { name: "Projects", href: "#projects-section", current: false },
-  { name: "About", href: "#about-section", current: false },
-  { name: "Contact", href: "#contact-section", current: false },
+  { name: "Hjem", href: "#cta-section", current: false },
+  { name: "Prosjekter", href: "#projects-section", current: false },
+  { name: "Om meg", href: "#about-section", current: false },
+  { name: "Kontakt meg", href: "#contact-section", current: false },
 ];
 
 function classNames(...classes) {

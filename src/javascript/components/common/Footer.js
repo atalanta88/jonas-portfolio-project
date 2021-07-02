@@ -19,7 +19,7 @@ export default function Footer() {
                 className="text-gray-300 hover:text-white transition-colors duration-200"
                 href="#cta-section"
               >
-                Home
+                Hjem
               </a>
             </li>
             <li className="my-2">
@@ -27,7 +27,7 @@ export default function Footer() {
                 className="text-gray-300 hover:text-white transition-colors duration-200"
                 href="#projects-section"
               >
-                Projects
+                Prosjekter
               </a>
             </li>
             <li className="my-2">
@@ -35,7 +35,7 @@ export default function Footer() {
                 className="text-gray-300 hover:text-white transition-colors duration-200"
                 href="#about-section"
               >
-                About
+                Om meg
               </a>
             </li>
             <li className="my-2">
@@ -43,7 +43,7 @@ export default function Footer() {
                 className="text-gray-300 hover:text-white transition-colors duration-200"
                 href="#contact-section"
               >
-                Contact
+                Kontakt meg
               </a>
             </li>
           </ul>
