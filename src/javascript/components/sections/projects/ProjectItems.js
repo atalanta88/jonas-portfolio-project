@@ -46,7 +46,7 @@ function ProjectItems({
           </svg>
 
           <h2 className="mx-3 text-lg font-semibold text-gray-600">
-            Grade: {project_grade}
+            Karakter: {project_grade}
           </h2>
         </div>
 
