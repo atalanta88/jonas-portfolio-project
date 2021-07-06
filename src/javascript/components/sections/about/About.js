@@ -25,11 +25,12 @@ export default function AboutSection() {
             <p className="mb-8 leading-relaxed">
               Jeg heter Jonas, er 32 år og bor i Sandefjord. Jeg har nylig
               avsluttet utdanning I Front-end utvikling ved Noroff. Etter en
-              arbeidsulykke i mitt tidligere yrke som taktekker, ble jeg tvunget
-              til å tenke på et nytt yrke. Jeg kom fort frem til at jeg ville
-              jobbe Innen IT. Jeg har alltid hatt interesse for teknologi og
-              blitt tiltrukket av det å løse problemer, så Front-end ble en
-              attraktiv og naturlig yrkesretning for meg å søke mot.
+              yrkesskade i min tidligere jobb som taktekker, fikk jeg en
+              mulighet til å velge en annen retning. Jeg kom fort frem til at
+              jeg ville jobbe Innen IT. Jeg har alltid hatt interesse for
+              teknologi og blitt tiltrukket av det å løse problemer, så
+              Front-end ble en attraktiv og naturlig yrkesretning for meg å søke
+              mot.
             </p>
             <p className="mb-8 leading-relaxed">
               Tiden på Noroff har vært veldig lærerik, men jeg merker jeg ivrer
