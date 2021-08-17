@@ -46,7 +46,7 @@ function ProjectItems({
           </svg>
 
           <h2 className="mx-3 text-lg font-semibold text-gray-600">
-            Karakter: {project_grade}
+            Karakter/Status: {project_grade}
           </h2>
         </div>
 
@@ -59,7 +59,7 @@ function ProjectItems({
           <div className="mt-8">
             <div className="flex items-center">
               <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-gray-600">
-                Lagd med
+                Teknologi
               </h4>
               <div className="flex-1 border-t-2 border-gray-200"></div>
             </div>

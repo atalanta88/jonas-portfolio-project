@@ -5,5 +5,3 @@ export const API_PROJECTS =
 export const API_ENQUIRIES = "https://stark-wildwood-33429.herokuapp.com/";
 export const API_CONTACTS =
   "https://cryptic-reaches-17096.herokuapp.com/contacts";
-export const API_HOUSING_DETAILS =
-  "https://cryptic-reaches-17096.herokuapp.com/housings";
