@@ -20,7 +20,7 @@ function ProjectItems({
     <>
       <div
         key={id}
-        className="max-w-sm mx-auto overflow-hidden bg-white rounded-lg  dark:bg-gray-800"
+        className="max-w-sm mx-auto overflow-hidden bg-gray-100 rounded-lg  dark:bg-gray-800"
       >
         <img
           className="object-cover object-center w-full h-56"
@@ -28,7 +28,7 @@ function ProjectItems({
           alt="avatar"
         ></img>
 
-        <div className="flex items-center px-6 py-3">
+        <div className="flex  items-center px-6 py-3">
           <svg
             className="w-6 h-6 text-green-500 stroke-current"
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ function ProjectItems({
             <path d="M12 8l4 4-4 4M8 12h7" />
           </svg>
 
-          <h2 className="mx-3 text-lg font-semibold text-gray-600">
+          <h2 className="mx-3  text-lg font-semibold text-gray-600">
             Karakter/Status: {project_grade}
           </h2>
         </div>
@@ -58,7 +58,7 @@ function ProjectItems({
           <p className="py-2 text-gray-700 dark:text-gray-400">{description}</p>
           <div className="mt-8">
             <div className="flex items-center">
-              <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-gray-600">
+              <h4 className="flex-shrink-0 pr-4 bg-gray-100 dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-gray-600">
                 Teknologi
               </h4>
               <div className="flex-1 border-t-2 border-gray-200"></div>
@@ -92,7 +92,7 @@ function ProjectItems({
           </div>
           <div className="container mx-auto">
             <div className="flex items-center mt-8 ">
-              <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-gray-600">
+              <h4 className="flex-shrink-0 pr-4 bg-gray-100 dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-gray-600">
                 Se mer
               </h4>
               <div className="flex-1 border-t-2 border-gray-200"></div>
