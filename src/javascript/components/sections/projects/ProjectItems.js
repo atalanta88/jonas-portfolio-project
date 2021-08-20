@@ -20,7 +20,7 @@ function ProjectItems({
     <>
       <div
         key={id}
-        className="max-w-sm mx-auto overflow-hidden bg-gray-100 rounded-lg  dark:bg-gray-800"
+        className="max-w-xl mx-auto overflow-hidden bg-gray-100 rounded-lg  dark:bg-gray-800"
       >
         <img
           className="object-cover object-center w-full h-56"
@@ -63,7 +63,7 @@ function ProjectItems({
               </h4>
               <div className="flex-1 border-t-2 border-gray-200"></div>
             </div>
-            <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
+            <ul className="mt-8 lg:grid md:grid-cols-2 lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
               {technology_list.map((item) => (
                 <>
                   <li className="mt-1 md:mt-3">

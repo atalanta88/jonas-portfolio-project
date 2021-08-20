@@ -7,7 +7,7 @@ import ErrorMessage from "../../common/ErrorMessage";
 import LoaderComponent from "../../common/Loading";
 
 function ProjectsList() {
-  const [housing, setProjectsList] = useState([]);
+  const [project, setProjectsList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -45,7 +45,7 @@ function ProjectsList() {
       <section id="projects-section" className=" dark:bg-gray-800 py-20">
         <div className="container mx-auto ">
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 ">
-            {housing.map(function (housing) {
+            {project.map(function (project) {
               const {
                 id,
                 project_name,
@@ -56,11 +56,10 @@ function ProjectsList() {
                 github_url,
                 website_url,
                 project_created_date,
-              } = housing;
+              } = project;
 
               return (
                 <ProjectItems
-                  key={id}
                   id={id}
                   project_name={project_name}
                   project_grade={project_grade}

@@ -19,11 +19,12 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
+
         <Route exact path="/">
           <Redirect to="/" />
         </Route>
         <Navbar />
-        <ScrollToTop />
         <div id="container">
           <div id="main-content">
             <Switch>
